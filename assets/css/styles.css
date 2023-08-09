@@ -1,0 +1,103 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@100;200;300;400;500;600&display=swap');
+
+/* body */
+body {
+    font-family: 'REM', sans-serif;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+/* header */
+header {
+    background: url("https://img.freepik.com/free-photo/beautiful-tree-middle-field-covered-with-grass-with-tree-line-background_181624-29267.jpg?w=996&t=st=1691579571~exp=1691580171~hmac=5fbd46168e84705eed07e41765a3c71fe5a66ce1e7345982a77c94711b72b377");
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px
+}
+
+#banner-overlay {
+    background-color: rgba(240, 240, 240, 0.4);
+    height: 500px;
+}
+
+h1 {
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: 600%;
+    font-weight: 600;
+}
+
+#greeting {
+    margin: 0 auto auto 100px;
+    width: 70vw;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+h2 {
+    color: orangered;
+}
+
+#theme-icon {
+    float: right;
+    padding-right: 40px;
+}
+
+#theme-icon i {
+    color: black;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+#theme-icon i:hover {
+    color: orange;
+}
+
+.banner-button {
+    background-color: orangered;
+    color: white;
+    font-size: large;
+    padding: 16px;
+    border: none;
+    border-radius: 32px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.banner-button:hover {
+    background-color: darkorange;
+}
+
+/* gallery */
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 50px;
+}
