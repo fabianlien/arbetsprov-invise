@@ -102,14 +102,13 @@ h3 {
 }
 
 .row {
-    width: 90vw;
+    width: 92vw;
     margin: auto;
     display: flex;
 }
 
 .col {
     display: flex;
-
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
