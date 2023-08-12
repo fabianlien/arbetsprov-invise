@@ -1,7 +1,7 @@
 /* imports */
 @import url('https://fonts.googleapis.com/css2?family=REM:wght@100;200;300;400;500;600&display=swap');
 
-/* body */
+/* universal */
 body {
     font-family: 'REM', sans-serif;
     margin: 0;
@@ -19,6 +19,12 @@ li {
     display: inline-block;
 }
 
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+
 /* header */
 header {
     background: url("https://img.freepik.com/free-photo/beautiful-tree-middle-field-covered-with-grass-with-tree-line-background_181624-29267.jpg?w=996&t=st=1691579571~exp=1691580171~hmac=5fbd46168e84705eed07e41765a3c71fe5a66ce1e7345982a77c94711b72b377");
@@ -34,6 +40,10 @@ header {
     height: 500px;
 }
 
+#banner-overlay.dark-theme {
+    background-color: rgba(8, 8, 8, 0.4);
+}
+
 h1 {
     margin: 0 auto;
     padding-top: 100px;
@@ -47,13 +57,12 @@ h1 {
 }
 
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 3;
     height: 100px;
     width: 100%;
     overflow: hidden;
-
 }
 
 h2 {
