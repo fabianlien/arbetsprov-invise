@@ -10,7 +10,7 @@ body {
 
 #max-viewport-container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1600px;
     background-color: white;
 }
 
@@ -20,6 +20,7 @@ a {
 
 ul {
     list-style-type: none;
+    margin: 0;
 }
 
 li {
@@ -33,6 +34,56 @@ body.dark-theme {
 
 #max-viewport-container.dark-theme {
     background-color: black;
+}
+
+/* navbar */
+nav {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    height: 100px;
+    width: 100%;
+}
+
+h2 {
+    color: orangered;
+}
+
+#theme-icon {
+    float: right;
+    padding-right: 40px;
+}
+
+#theme-icon i {
+    color: black;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+#theme-icon i:hover {
+    color: orange;
+}
+
+#theme-icon .fa-sun {
+    color: white;
+}
+
+@media screen and (min-width: 1601px) {
+    nav {
+        margin: 0;
+        height: 70px;
+        position: relative;
+    }
+
+    ul.light-theme {
+        background-color: white;
+    }
+
+    ul.dark-theme {
+        background-color: black;
+    }
 }
 
 /* header */
@@ -69,37 +120,6 @@ h1 {
 #greeting p {
     max-width: 800px;
     max-height: 140px;
-}
-
-nav {
-    position: absolute;
-    top: 0;
-    z-index: 3;
-    height: 100px;
-    width: 100%;
-    max-width: 1200px;
-    overflow: hidden;
-}
-
-h2 {
-    color: orangered;
-}
-
-#theme-icon {
-    float: right;
-    padding-right: 40px;
-}
-
-#theme-icon i {
-    color: black;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-}
-
-#theme-icon i:hover {
-    color: orange;
 }
 
 .banner-button {
@@ -166,6 +186,7 @@ h3 {
     max-width: 1104px;
     margin: auto;
     display: flex;
+    justify-content: center;
 }
 
 .col {
@@ -207,29 +228,29 @@ h3 {
         width: 88vw;
         height: 88vw;
     }
-    
+
     .col:nth-child(even) img:last-child {
         width: 88vw;
         height: 88vw;
     }
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1601px) {
     .col img {
-        padding: 12px;
+        padding: 16px;
         object-fit: cover;
-        width: 252px;
-        height: 252px;
+        width: 336px;
+        height: 336px;
     }
-    
+
     .col:nth-child(odd) img:first-child {
-        width: 528px;
-        height:528px;
+        width: 704px;
+        height: 704px;
     }
-    
+
     .col:nth-child(even) img:last-child {
-        width: 528px;
-        height: 528px;
+        width: 704px;
+        height: 704px;
     }
 }
 
