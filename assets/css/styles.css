@@ -5,6 +5,13 @@
 body {
     font-family: 'REM', sans-serif;
     margin: 0;
+    background-color: lightgray;
+}
+
+#max-viewport-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: white;
 }
 
 a {
@@ -20,10 +27,13 @@ li {
 }
 
 body.dark-theme {
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     color: white;
 }
 
+#max-viewport-container.dark-theme {
+    background-color: black;
+}
 
 /* header */
 header {
@@ -56,12 +66,18 @@ h1 {
     width: 70vw;
 }
 
+#greeting p {
+    max-width: 800px;
+    max-height: 140px;
+}
+
 nav {
     position: absolute;
     top: 0;
     z-index: 3;
     height: 100px;
     width: 100%;
+    max-width: 1200px;
     overflow: hidden;
 }
 
@@ -103,6 +119,41 @@ h2 {
     background-color: darkorange;
 }
 
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 474%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #greeting {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .banner-button {
+        display: block;
+        margin: 40px auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    h1 {
+        line-height: 64px;
+    }
+
+    #greeting p {
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    h1 {
+        font-size: 400%;
+        line-height: 56px;
+    }
+}
+
 /* gallery */
 h3 {
     text-align: center;
@@ -112,6 +163,7 @@ h3 {
 
 .row {
     width: 92vw;
+    max-width: 1104px;
     margin: auto;
     display: flex;
 }
@@ -137,6 +189,48 @@ h3 {
 .col:nth-child(even) img:last-child {
     width: 44vw;
     height: 44vw;
+}
+
+@media screen and (max-width: 575px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col img {
+        padding: 2vw;
+        object-fit: cover;
+        width: 42vw;
+        height: 42vw;
+    }
+
+    .col:nth-child(odd) img:first-child {
+        width: 88vw;
+        height: 88vw;
+    }
+    
+    .col:nth-child(even) img:last-child {
+        width: 88vw;
+        height: 88vw;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .col img {
+        padding: 12px;
+        object-fit: cover;
+        width: 252px;
+        height: 252px;
+    }
+    
+    .col:nth-child(odd) img:first-child {
+        width: 528px;
+        height:528px;
+    }
+    
+    .col:nth-child(even) img:last-child {
+        width: 528px;
+        height: 528px;
+    }
 }
 
 /* footer */
